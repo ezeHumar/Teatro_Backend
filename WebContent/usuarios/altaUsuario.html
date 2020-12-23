@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+	<h3>Agregar usuario</h3>
+	<div>
+		<form>
+			<label for="fname">Nombre:*</label><br> <input type="text"
+				id="fname" name="user" required><br> <br> <label
+				for="lname">Apellido:*</label><br> <input type="text"
+				id="lname" name="user" required><br> <br> <label
+				for="email">Email:*</label><br> <input type="email" id="email"
+				name="user" required><br> <br> <label for="pass">Contraseña:*</label><br>
+			<input type="password" id="pass" name="user" required><br>
+			<br> <label for="pass">Perfil:</label> <br> <select>
+				<option>Administrador</option>
+				<option>Operador</option>
+				<option>Participante</option>
+			</select> <br>
+
+			<h5>* = campo obligatorio</h5>
+			<input type="Submit" value="Registrar">
+		</form>
+	</div>
+	<br>
+	<a href="/prototipoTeatro/usuarios/usuarios.html"><button>Atrás</button></a>
+</body>
+</html>

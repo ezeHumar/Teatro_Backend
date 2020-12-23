@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+	<h3>Agregar obra</h3>
+	<div>
+		<form>
+			<label for="title">Título:*</label><br> <input type="text"
+				id="title" name="play" required> <br> <br> <label
+				for="duration">Duración:</label><br> <input type="time"
+				id="duration" name="play"><br> <br> <label
+				for="artists">Artistas:</label><br> <input type="text"
+				id="artists" name="play"><br> <br> <label
+				for="tags">Tags:</label><br> <input type="text" id="tags"
+				name="play"><br> <br> <label for="description">Descripcion:</label><br>
+			<textarea id="description" rows="4" cols="50"></textarea>
+			<br>
+			<br> <label for="activities">Actividad:</label> <br> <select
+				id="activities">
+				<option value="" disabled selected>Seleccione una actividad</option>
+				<option value="activity1">Actividad1</option>
+				<option value="activity2">Actividad2</option>
+				<option value="activity3">Actividad3</option>
+				<option value="none">Ninguna</option>
+			</select> <br> <br> <label for="fileToUpload">Imagen:</label><br>
+			<input type="file" name="play" id="fileToUpload"> <input
+				type="submit" value="Subir imagen" name="play"><br>
+			<h5>* = campo obligatorio</h5>
+			<input type="Submit" value="Agregar">
+		</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/obras/obras.html"><button>Atrás</button></a>
+
+</body>
+</html>

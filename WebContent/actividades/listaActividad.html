@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+
+	<h3>Listado de actividades</h3>
+
+	<p>Filtrar:</p>
+	<br>
+
+	<form>
+
+		<label for="play">Obra:</label> <select name="play">
+			<option value="none"></option>
+			<option value="play1">Obra1</option>
+			<option value="play2">Obra2</option>
+			<option value="play3">Obra3</option>
+		</select> <label for="theater">Espacio:</label> <select name="theater">
+			<option value="none"></option>
+			<option value="theater1">Espacio1</option>
+			<option value="theater2">Espacio2</option>
+			<option value="theater3">Espacio3</option>
+		</select> <label for="dateactivity">Feha:</label> <input type="date"
+			id="dateactivity" name="activity"> <label for="timeactivity">Hora:</label>
+		<input type="time" id="timeactivity" name="activity"> <input
+			type="Submit" value="Buscar">
+	</form>
+
+	<br>
+
+	<label for="filter">Ordenar por:</label>
+	<select name="filter">
+		<option></option>
+		<option value="play">Obra</option>
+		<option value="theater">Sala</option>
+		<option value="datetime">Fecha/Hora</option>
+	</select>
+	<button>Ordenar</button>
+
+	<br>
+	<br>
+
+	<table>
+		<tr>
+			<th>#</th>
+			<th>Obra</th>
+			<th>Espacio</th>
+			<th>Fecha</th>
+			<th>Hora</th>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>Obra2</td>
+			<td>Espacio2</td>
+			<td>20-12-2020</td>
+			<td>22:00</td>
+			<td><a
+				href="/prototipoTeatro/actividades/modificaActividad.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>Obra1</td>
+			<td>Espacio3</td>
+			<td>20-3-2021</td>
+			<td>18:00</td>
+			<td><a
+				href="/prototipoTeatro/actividades/modificaActividad.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Obra3</td>
+			<td>Espacio3</td>
+			<td>21-3-2022</td>
+			<td>20:00</td>
+			<td><a
+				href="/prototipoTeatro/actividades/modificaActividad.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+
+	</table>
+
+	<br>
+	<a href="/prototipoTeatro/actividades/actividades.html"><button>Atrás</button></a>
+
+</body>
+</html>

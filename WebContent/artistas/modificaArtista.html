@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+	<h3>Modificar artista</h3>
+
+	<form>
+		<label for="fname">Nombre:*</label><br> <input type="text"
+			id="fname" name="artist" value="Paulo" required><br> <br>
+
+		<label for="lname">Apellido:*</label> <br> <input type="text"
+			id="lname" name="artist" value="Gilberto" required><br>
+		<br> <label for="nickname">Apodo:</label> <br> <input
+			type="text" id="nickname" name="artist" value="paulito"><br>
+		<br> <label for="birthday">Fecha de nacimiento:</label><br>
+		<input type="date" id="fbirthday" name="artist" value="20-2-1968"><br>
+		<br> <label for="fileToUpload">Imagen:</label><br> <input
+			type="file" name="artist" id="fileToUpload"> <input
+			type="submit" value="Subir imagen" name="artist"><br>
+
+		<h5>* = campo obligatorio</h5>
+
+		<input type="Submit" value="Modificar">
+	</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/artistas/modificaArtistas.html"><button>Atrás</button></a>
+
+</body>
+</html>

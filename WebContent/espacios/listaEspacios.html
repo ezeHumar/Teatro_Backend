@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+
+	<h3>Listado de salas</h3>
+
+	<p>Filtrar:</p>
+
+	<form>
+		<label for="name">Nombre:</label> <input type="text" id="name"
+			name="theater"> <label for="location">Ubicacion:</label> <input
+			type="text" id="location" name="theater"> <label
+			for="capacitymin">Capadidad:</label> <input type="number"
+			id="capacitymin" name="theater"> <label for="capacitymax">a</label>
+		<input type="number" id="capacitymax" name="theater"> <label
+			for="lcondition">Condicion:</label> <input type="radio" id="open"
+			name="theater" value="open"> <label for="open">Abierto</label>
+		<input type="radio" id="closed" name="theater" value="closed">
+		<label for="condicion">Cerrado</label> <input type="Submit"
+			value="Buscar">
+	</form>
+
+	<br>
+
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Ubicacion</th>
+			<th>Capacidad</th>
+			<th>Condicion</th>
+			<th>Actividad</th>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Espacio1</td>
+			<td>Ubicacion1</td>
+			<td>32</td>
+			<td>Cerrado</td>
+			<td><select>
+			</select></td>
+			<td><a href="/prototipoTeatro/espacios/modificaEspacio.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Espacio2</td>
+			<td>Ubicacion2</td>
+			<td>64</td>
+			<td>Abierto</td>
+			<td><select>
+					<option disabled>Actividad1</option>
+			</select></td>
+			<td><a href="/prototipoTeatro/espacios/modificaEspacio.html"><button>Modificar</button></a></td>
+			<td><button disabled>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Espacio3</td>
+			<td>Ubicacion3</td>
+			<td>20</td>
+			<td>Abierto</td>
+			<td><select>
+					<option disabled>Actividad2</option>
+					<option disabled>Actividad3</option>
+			</select></td>
+			<td><a href="/prototipoTeatro/espacios/modificaEspacio.html"><button>Modificar</button></a></td>
+			<td><button disabled>Dar de baja</button>
+				</a></td>
+		</tr>
+
+
+	</table>
+
+	<br>
+	<a href="/prototipoTeatro/espacios/espacios.html"><button>Atrás</button></a>
+
+</body>
+</html>

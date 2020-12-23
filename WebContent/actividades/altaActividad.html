@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+	<h3>Agregar actividad</h3>
+	<div>
+		<form>
+			<label for="play">Obra:</label> <br> <select name="play">
+				<option value="none">Ninguna</option>
+				<option value="play1">Obra1</option>
+				<option value="play2">Obra2</option>
+				<option value="play3">Obra3</option>
+			</select> <br>
+			<br> <label for="theater">Espacio:*</label> <br> <select
+				name="theater">
+				<option value="theater1">Espacio1</option>
+				<option value="theater2">Espacio2</option>
+				<option value="theater3">Espacio3</option>
+			</select> <br>
+			<br> <label for="dateactivity">Fecha:*</label><br> <input
+				type="date" id="dateactivity" name="activity" required><br>
+			<br> <label for="timeactivity">Hora:*</label><br> <input
+				type="time" id="timeactivity" name="activity" required><br>
+
+			<h5>* = campo obligatorio</h5>
+
+			<input type="Submit" value="Agregar">
+		</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/actividades/actividades.html"><button>Atrás</button></a>
+
+</body>
+</html>

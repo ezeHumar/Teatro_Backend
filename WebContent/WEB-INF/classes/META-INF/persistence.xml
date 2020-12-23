@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="bdTeatro">
+	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+	<class>com.jyaa.modelo.Actividad</class>
+	<class>com.jyaa.modelo.Edicion</class>
+	<class>com.jyaa.modelo.Espacio</class>
+	<class>com.jyaa.modelo.Obra</class>
+	<class>com.jyaa.modelo.Tag</class>
+	<class>com.jyaa.modelo.Usuario</class>
+	<class>com.jyaa.modelo.general.Direccion</class>
+	<class>com.jyaa.modelo.general.Evento</class>
+	<class>com.jyaa.modelo.general.Notificacion</class>
+	<class>com.jyaa.modelo.general.Valoracion</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+					value="com.mysql.jdbc.Driver" />
+<!-- 			<property name="javax.persistence.jdbc.url" -->
+<!-- 				value="jdbc:mysql://mysql.java.linti.unlp.edu.ar/jyaa2020_bd13?autoReconnect=true" /> -->
+<!-- 			<property name="javax.persistence.jdbc.user" value="jyaa2020_usr13" /> -->
+<!-- 			<property name="javax.persistence.jdbc.password" value="jyaa2020_pwd13" /> -->
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/prueba3?autoReconnect=true" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+</persistence>
+

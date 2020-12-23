@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+	<h3>Modificar edición</h3>
+
+	<form>
+		<label for="title">Título:*</label><br> <input type="text"
+			id="title" name="edition" value="nombre a modificar" required><br>
+		<br> <label for="start">Comienzo:*</label> <br> <input
+			type="date" id="start" name="edition" value="01-01-2020"
+			min="2020-01-01" max="2030-12-31" required> <br> <br>
+		<label for="end">Fin:*</label> <br> <input type="date" id="end"
+			name="edition" value="01-06-2020" min="2020-01-01" max="2030-12-31"
+			required> <br> <br> <label for="description">Descripcion</label><br>
+		<textarea id="description" rows="4" cols="50">Descripcion de la edicion a modificar</textarea>
+		<br>
+		<br> <label for="activities">Actividades:</label> <br> <label>Actividad2</label>
+		<button>Quitar</button>
+		<br>
+		<button>Añadir Actividad</button>
+		<br> <br> <label for="fileToUpload">Imagen:</label><br>
+		<input type="file" name="edition" id="fileToUpload"> <input
+			type="submit" value="Subir imagen" name="edition"><br>
+
+		<h5>* = campo obligatorio</h5>
+
+		<input type="Submit" value="Modificar">
+	</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/ediciones/modificaEdicion.html"><button>Atrás</button></a>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+
+	<h3>Listado de ediciones</h3>
+
+	<p>Filtrar:</p>
+
+	<form>
+		<label for="title">Titulo:</label> <input type="text" id="title"
+			name="edition"> <label for="start">Comienzo:</label> <input
+			type="date" id="start" name="edition"> <label for="end">Fin:</label>
+		<input type="date" id="end" name="edition"> <input
+			type="Submit" value="Buscar">
+	</form>
+
+	<br>
+
+	<table>
+		<tr>
+			<th>Titulo</th>
+			<th>Comienzo</th>
+			<th>Fin</th>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Edicion1</td>
+			<td>13-4-2020</td>
+			<td>20-4-2020</td>
+			<td><a href="/prototipoTeatro/ediciones/modificaEdicion.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Edicion2</td>
+			<td>1-1-2019</td>
+			<td>1-6-2019</td>
+			<td><a href="/prototipoTeatro/ediciones/modificaEdicion.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Edicion3</td>
+			<td>3-3-2020</td>
+			<td>30-9-2021</td>
+			<td><a href="/prototipoTeatro/ediciones/modificaEdicion.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+
+	</table>
+
+	<br>
+	<a href="/prototipoTeatro/ediciones/ediciones.html"><button>Atrás</button></a>
+
+</body>
+</html>

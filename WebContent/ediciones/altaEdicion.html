@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+	<h3>Agregar edicion</h3>
+	<div>
+		<form>
+			<label for="title">Título:*</label><br> <input type="text"
+				id="title" name="edition" required><br> <br> <label
+				for="start">Comienzo:*</label> <br> <input type="date"
+				id="start" name="edition" min="2020-01-01" max="2030-12-31" required>
+			<br> <br> <label for="end">Fin:*</label> <br> <input
+				type="date" id="end" name="edition" min="2020-01-01"
+				max="2030-12-31" required> <br> <br> <label
+				for="description">Descripcion</label><br>
+			<textarea id="description" rows="4" cols="50"></textarea>
+			<br>
+			<br> <label for="activities">Actividades:</label> <br> <select
+				id="activities">
+				<option value="" disabled selected>Seleccione una actividad</option>
+				<option value="activity1">Actividad1</option>
+				<option value="activity2">Actividad2</option>
+				<option value="activity3">Actividad3</option>
+			</select> <br>
+
+			<button>Añadir Actividad</button>
+			<br> <br> <label for="fileToUpload">Imagen:</label><br>
+			<input type="file" name="edition" id="fileToUpload"> <input
+				type="submit" value="Subir imagen" name="edition"><br>
+
+			<h5>* = campo obligatorio</h5>
+
+			<input type="Submit" value="Agregar">
+		</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/ediciones/ediciones.html"><button>Atrás</button></a>
+
+</body>
+</html>

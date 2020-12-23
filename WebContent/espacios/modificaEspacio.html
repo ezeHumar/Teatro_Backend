@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+	<h3>Modificar espacio</h3>
+
+	<form>
+		<label for="name">Nombre:*</label><br> <input type="text"
+			id="name" name="theater" value="Nombre a modificar" required><br>
+		<br> <label for="location">Ubicacion:*</label> <br> <input
+			type="text" id="location" name="theater"
+			value="Ubicacion a modificar" required> <br> <br> <label
+			for="capacity">Capacidad:*</label> <br> <input type="number"
+			id="capacity" min="0" name="theater" value="3" required> <br>
+		<br> <label for="description">Descripcion</label><br>
+		<textarea id="description" rows="4" cols="50">Descripcion a modificar</textarea>
+		<br>
+		<br> <label for="condition">Condicion:*</label> <br> <input
+			type="radio" id="open" name="theater" value="open" required>
+		<label for="open">Abierto</label><br> <input type="radio"
+			id="closed" name="theater" value="closed" required> <label
+			for="closed">Cerrado</label><br>
+
+		<h5>* = campo obligatorio</h5>
+		<input type="Submit" value="Modificar">
+	</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/espacios/modificaEspacios.html"><button>Atrás</button></a>
+
+</body>
+</html>

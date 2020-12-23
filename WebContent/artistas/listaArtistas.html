@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+
+	<h3>Listado de artistas</h3>
+
+	<p>Filtrar:</p>
+	<br>
+
+	<form>
+		<label for="fname">Nombre:</label> <input type="text" id="fname"
+			name="artist"> <label for="lname">Apellido:</label> <input
+			type="text" id="lname" name="artist"> <label for="tags">Tags:</label>
+		<input type="text" id="tags" name="artist"> <label for="plays">Obras:</label>
+		<input type="email" id="plays" name="artist"> <input
+			type="Submit" value="Buscar">
+	</form>
+
+	<br>
+
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Paulo</td>
+			<td>Gilberto</td>
+			<td>52</td>
+			<td><a href="/prototipoTeatro/artistas/modificaArtista.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Roberto</td>
+			<td>Perez</td>
+			<td>28</td>
+			<td><a href="/prototipoTeatro/artistas/modificaArtista.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Guillermina</td>
+			<td>Heredia</td>
+			<td>47</td>
+			<td><a href="/prototipoTeatro/artistas/modificaArtista.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+
+	</table>
+
+	<br>
+	<a href="/prototipoTeatro/artistas/artistas.html"><button>Atrás</button></a>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+	<h3>Agregar tag</h3>
+	<div>
+		<form>
+			<label for="nametag">Tag:*</label><br> <input type="text"
+				id="nametag" name="tag" required><br>
+
+			<h5>* = campo obligatorio</h5>
+
+			<input type="Submit" value="Agregar">
+		</form>
+	</div>
+
+	<br>
+	<a href="/prototipoTeatro/tags/tags.html"><button>Atrás</button></a>
+</body>
+</html>

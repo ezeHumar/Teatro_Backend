@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administracion</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function() {
+		$("#header").load("/prototipoTeatro/header.html")
+	});
+</script>
+
+<body>
+
+	<div id="header"></div>
+
+
+	<h3>Listado de obras</h3>
+
+	<p>Filtrar:</p>
+
+	<form>
+		<label for="title">Titulo:</label> <input type="text" id="title"
+			name="play"> <label for="artists">Artistas:</label> <input
+			type="text" id="artists" name="play"> <label for="tags">Tags:</label>
+		<input type="text" id="tags" name="play"> <label
+			for="activitites">Actividad:</label> <select name="activities">
+			<option></option>
+			<option value="activity1">Actividad1</option>
+			<option value="activity2">Actividad2</option>
+			<option value="activity3">Actividad3</option>
+		</select> <input type="Submit" value="Buscar">
+	</form>
+
+	<br>
+
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Duración (mins)</th>
+			<th>Artistas</th>
+			<th>Actividad</th>
+			<th>Tags</th>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Obra1</td>
+			<td>120</td>
+			<td>Guillermina Heredia</td>
+			<td>-</td>
+			<td>Tag1, Tag2</td>
+			<td><a href="/prototipoTeatro/obras/modificaObra.html"><button>Modificar</button></a></td>
+			<td><button>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Obra2</td>
+			<td>68</td>
+			<td>Roberto Perez</td>
+			<td>Actividad2</td>
+			<td>Tag3, Tag4</td>
+			<td><a href="/prototipoTeatro/obras/modificaObra.html"><button>Modificar</button></a></td>
+			<td><button disabled>Dar de baja</button>
+				</a></td>
+		</tr>
+
+		<tr>
+		</tr>
+
+		<tr>
+			<td>Obra3</td>
+			<td>234</td>
+			<td>Guillermina Heredia, Paulo Gilberto</td>
+			<td>Actividad1</td>
+			<td>Tag3, Tag4</td>
+			<td><a href="/prototipoTeatro/obras/modificaObra.html"><button>Modificar</button></a></td>
+			<td><button disabled>Dar de baja</button>
+				</a></td>
+		</tr>
+
+
+
+	</table>
+
+	<br>
+	<a href="/prototipoTeatro/obras/obras.html"><button>Atrás</button></a>
+
+</body>
+</html>
